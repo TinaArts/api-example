@@ -14,7 +14,7 @@ use lib\auth\Auth;
 
 abstract class BaseController
 {
-    public $auth = false;
+    public $auth = true;
 
     /**
      * BaseController constructor.
@@ -22,7 +22,9 @@ abstract class BaseController
     public function __construct()
     {
         if ($this->auth) {
-            $this->verify();
+            if (!$this->verify()) {
+                App::getCore()->url->response->getResponseException(401);
+            }
         }
 
     }

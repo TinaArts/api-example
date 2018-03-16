@@ -61,5 +61,6 @@ class Response implements ResponseInterface
         $this->setHeaderCode($code, $message);
 
         echo json_encode(['message' => $message]);
+        exit;
     }
 }
