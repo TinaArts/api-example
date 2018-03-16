@@ -15,7 +15,7 @@ Test auth credentials
 login: root  
 password: root
 
-######HEADERS  
+###### HEADERS  
 1. Authorization - login:password in base64
 ```javascript
 {
@@ -23,13 +23,13 @@ password: root
 }
 ```
 
-######Response
+###### Response
 1. id - unique id  
 2. title - name of toys  
 3. price - price of toys  
 4. color - color of toys  
 
-######Erorrs
+###### Erorrs
 1. messages
 
 ```javascript
@@ -38,7 +38,7 @@ password: root
 }
 ```
 
-######GET /toy/ - Get all toys  
+###### GET /toy/ - Get all toys  
 Response example:  
 
 ```javascript
@@ -70,7 +70,7 @@ Response example:
 ]
 ``` 
 
-######GET /toy/id - Get toy by id 
+###### GET /toy/id - Get toy by id 
 Response example:  
 1. id - unique id  
 2. title - name of toys  
